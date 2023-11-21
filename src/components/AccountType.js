@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import "../style/AccountType.css";
-import Button from "react-bootstrap/button";
+import {Button} from "react-bootstrap";
 
 function AccountType() {
   

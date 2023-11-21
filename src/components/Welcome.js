@@ -1,6 +1,6 @@
 import React from 'react'
 import "../style/Welcome.css";
-import Button from "react-bootstrap/button";
+import {Button} from "react-bootstrap";
 function welcome() {
   return (
     <div className="main">

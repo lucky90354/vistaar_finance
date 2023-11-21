@@ -1,7 +1,7 @@
 import React from 'react';
 import "../style/IdDocument.css";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/button";
+import {Button} from "react-bootstrap";
 import PreviousButton from "../assets/Images/ChevronLeftOutline.png";
 import CustomerImage from "../assets/Images/Humanprofile_TwoColor.png";
 import GeoTagging from "../assets/Images/geoloaction.png";

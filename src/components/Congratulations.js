@@ -1,6 +1,6 @@
 import React from 'react';
 import "../style/Congratulations.css";
-import Button from "react-bootstrap/button";
+import {Button} from "react-bootstrap";
 import congratulationsGif from "../assets/Images/congratulations.gif";
 
 const Congratulations = () => {

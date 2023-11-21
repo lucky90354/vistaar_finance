@@ -2,7 +2,7 @@ import React, { useState } from "react"; // Import useState
 import "../style/OrderTracking.css";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/button";
+import {Button} from "react-bootstrap";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import ManagerImage from "../assets/Images/Rectangle327.png";
 import phoneIcon from "../assets/Images/call1.png";
