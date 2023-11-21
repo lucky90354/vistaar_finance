@@ -20,7 +20,7 @@ function App() {
       <div className="App">
         <Navbar visible={navVisible} show={showNavbar} />
         <Routes>
-          <Route path="/" element={<Navigate to="/" />} />
+          <Route path="/" element={<Navigate to="/welcome" />} />
 
           <Route path="/welcome" element={<Welcome />} />
 
