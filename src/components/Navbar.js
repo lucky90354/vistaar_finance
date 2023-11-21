@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaThLarge, FaAccessibleIcon } from "react-icons/fa";
 import {
-  MdOutlineGpsFixed,
   MdOutlineReceipt,
   MdDomainVerification,
 } from "react-icons/md";
@@ -71,6 +70,7 @@ function Navbar({visible, show}) {
               <GiTrophyCup size={ICON_SIZE} />
               <span>Congratulations</span>
             </NavLink>
+
           </div>
         </div>
         <div className="links">
