@@ -1,8 +1,7 @@
 import React, { useState } from "react"; // Import useState
 import "../style/AppAllocation.css";
 import { Link } from "react-router-dom";
-import Card from "react-bootstrap/Card";
-import {Button} from "react-bootstrap";
+import {Button, Card} from "react-bootstrap";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import locationIcon from "../assets/Images/LocationMarker.png";
 import ManagerImage from "../assets/Images/Ellipse112.png";
