@@ -1,0 +1,64 @@
+.main {
+    margin-top: 2rem;
+    color: #0055A9;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.image2{
+    overflow: auto;
+    margin-top: -14rem;
+    margin-left: -4rem;
+}
+.image3 {
+    overflow: auto;
+    margin-top: -8rem;
+     margin-right: -2rem; 
+}
+.tag-line{
+    color: #B2C0C9;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.logo1{
+    margin-top: 2rem;
+    color: #0055A9;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.dot{
+    margin-top: 2rem;
+    color: #0055A9;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.buttonStyle{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8px 100px;
+    background-color: #0055A9;
+    border-radius: 8px;
+    border: 1px solid #B2C0C9;
+    cursor: pointer;
+}

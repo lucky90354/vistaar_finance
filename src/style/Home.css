@@ -1,0 +1,213 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color:#0055A9;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.page-view{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-view-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-view-create-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-view-allocated-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    background-color: #0055A9;
+    font-family: ubuntu;
+    width: 380px;
+    height: 110px;
+    align-items: center;
+    top: 5rem;
+    border: 1x solid #60708f;
+    border-radius: 10px;
+    box-shadow: #60708f 2px;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.total-application {
+    padding: 5px 0;
+}
+
+.total-application-no {
+    font-weight: 700;
+}
+
+.approve-loan {
+    padding: 5px 0;
+}
+
+.approve-loan-no {
+    font-weight: 700;
+}
+
+.total-disburse {
+    padding: 20px 0;
+    margin-left: 15px;
+}
+
+.total-disburse-amt {
+    padding: 20px 0;
+    margin-right: 100px;
+}
+
+.list {
+    background-color: #fff;
+    font-family: ubuntu;
+    width: 380px;
+    height: 110px;
+    align-items: center;
+    top: 5rem;
+    border: 1x solid #d5d9df;
+    border-radius: 10px;
+    box-shadow: #60708f 2px;
+}
+
+.application-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 10px 10px;
+    color: #000000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.left-icon img{
+    padding: 10px;
+    background-color: #F0F1F5;
+    border: 1px solid #e7eaf0;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.right-icon img {
+    padding: 10px;
+    background-color: #F0F1F5;
+    border: 1px solid #e7eaf0;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 10px;    
+    
+}
+.app-list span{
+    display: block;
+    text-align: center;
+}
+.app-status span {
+    display: block;
+    text-align: center;
+}
+
+.Create-application{
+    margin-top: 2rem;
+    background-color: #ebf2f5;
+    font-family: ubuntu;
+    width: 380px;;
+    height: 110px;
+    align-items: center;
+    border: 2x solid rgb(4, 4, 4);
+    border-radius: 8px;
+}
+.allocated-application {
+    margin-top: 2rem;
+    background-color: #ebf2f5;
+    font-family: ubuntu;
+    width: 380px;
+    height: 110px;
+    align-items: center;
+    border: 2x solid rgb(4, 4, 4);
+    border-radius: 8px;
+}
+.card-heading{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+    color: #000000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.card-data{
+    padding: 5px 15px;
+}
+.card-head{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.card-content{
+    color: rgba(78, 79, 80, 0.70);
+    font-family: Ubuntu;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.card-image{
+    margin-top: -7px;
+    margin-left: 3rem;
+}
+.card-image2{
+    margin-top: -30px;
+    margin-left: 4rem;
+}
+.card-image3 {
+    margin-top: -110px;
+    overflow: auto;
+    margin-left: 2rem;
+}
+.card-image4 {
+    margin-top: -70px;
+    overflow: auto;
+    margin-left: 5rem;
+}

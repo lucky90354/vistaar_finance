@@ -1,0 +1,286 @@
+.top-bar{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -99;
+}
+.back-button{
+    width: 9px;
+    height: 10px;
+}
+.back-link {
+    cursor: pointer;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+#locationDropdown{
+    margin-top: 2rem;
+    border-radius: 5px;
+    margin-left: 13rem ;
+    border: 1px solid #C4C4C4;
+    background: #FFF;
+    padding: 10px 15px;
+}
+.dropdown-container{
+    padding: 10px 15px;
+}
+.container{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.map-style1{
+    z-index: -99999;
+    width: 414px;
+    overflow: visible;
+}
+.app-allocation{
+    font-family: ubuntu;
+    display: flex;
+    justify-content: center;
+}
+.card-deatils{
+    justify-content: space-around;
+    background-color: #0055A9;
+    font-family: ubuntu;
+    border: 2x solid rgb(4, 4, 4);
+    border-radius: 8px;
+    width: 365px;
+    height: 78px;
+}
+.card-heading1{
+    display: flex;
+    justify-content: space-around;
+    color: #000000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+.card-head1{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 17px;
+    padding: 10px 5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.card-content1{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    padding: 10px 5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+.content2-data{
+    color: #FFF;
+    font-family: Plus Jakarta Sans;
+    margin-top: 25px;
+    padding: 5px 10px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px ;
+    background-color: #559fe8;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.relationship-managers{
+    background-color: #ffffff;
+    font-family: ubuntu;
+}
+.manager-relation-ship {
+    margin-top: 2rem;
+    
+    background-color: #ffffff;
+    font-family: ubuntu;
+    display: flex;
+    justify-content: center;
+}
+.managers-deatils{
+    border-left: 2px solid #000;
+    border-left-style: dotted;
+    width: 365px;
+    height: 385px;
+}
+
+
+.manager{
+    display: block;
+    padding: 5px 5px;
+    /* margin-bottom: 30px; */
+    border-bottom: 1px solid #C4C4C4;
+    margin-top: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.list-view{
+    display: flex;
+    justify-content: space-between;
+}
+.id-name{
+    display: flex;
+    justify-content: space-around;
+}
+.distance-km{
+    display: flex;
+    justify-content: space-around;
+}
+
+.application-id{
+    font-size: 12px;
+    margin-left: 1.7rem;
+    padding: 0 5px;
+}
+.border-bottom{
+    border-bottom: 2px solid #C4C4C4;
+    margin-left: 10px;
+    margin-top: 3rem;
+    width: 80%;
+    margin: 1rem auto;
+    /* margin-bottom: 10px; */
+}
+.id{
+    margin-right: 10px;
+}
+.location{
+    padding: 0 5px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+}
+.location-icon{
+    padding: 0 5px;
+    width: 30px;
+    height: 20px;
+}
+
+.manager-info{
+    display: flex;
+    justify-content: space-around;
+}
+.border-line{
+    border: 2px solid #EEE;
+    height:0px;
+    width: 20%;
+    margin: 1rem auto;
+}
+.image-icon {
+    margin-left: 1rem;
+    width: 49.5px;
+    height: 49.5px;
+    border-radius: 49.5px;
+    border: 3px solid #FFF;
+}
+.resume-app{
+    color:#0055A9;
+    font-style: bold;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.resume-link{
+    text-decoration: none;
+}
+.communication{
+    display: flex;
+    justify-content: space-between;
+}
+.phone{
+    margin-left: 30px;
+    height: 31.114px;
+}
+.message{
+    margin-top: 5px;
+}
+.message-link{
+    padding: 5px 5px;
+    background-color: #C4C4C4;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #C4C4C4;
+    border-radius: 50px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+.address{
+    background-color: #C4C4C4;
+    text-align: center;
+    padding: 0 5px;
+    text-decoration: none;
+    border: 2px solid #C4C4C4;
+    border-radius: 50px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-style: bold;
+    line-height: 20px;
+    margin-right: 2rem;
+    display: flex;
+    margin-top: 2px;
+}
+.address-map{
+    margin-top: 3px;
+    margin-right: 2px;
+}
+.address-icon{
+    margin-top: 5px;
+    margin-right:7px;
+    width: 15px;
+    height: 18px;
+}
+
+.connect-allocation {
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hiperlink-style{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 8px 140px;
+    background-color: #0055A9;
+    border-radius: 8px;
+    border: 1px solid #B2C0C9;
+    
+}
+
+.connect-app-alloc {
+    color: #FFF;
+    background-color: #0055A9;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+

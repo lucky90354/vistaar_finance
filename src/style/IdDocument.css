@@ -1,0 +1,235 @@
+.previous-button{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.previous-link{
+    margin-right: 20rem
+}
+.previousbutton{
+    width: 25.056px;
+    height: 20.375px;
+    /* margin-right: 8px; */
+}
+.page-title{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+}
+.title-image{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.humanprofile{
+    width: 220px;
+    height: 152.37px;
+}
+.page-main-title{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;  
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.page-tag-line{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}   
+.form-data{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 925px;
+}
+.name-tag 
+{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.email-tag{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.phone-tag {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.address-tag {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.location-tag{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-name,.last-name{
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 173px;
+    height: 55px;
+    background: #FFF;
+    padding: 8px 8px;
+}
+.email-id{
+    width: 350px;
+    height: 55px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    background: #FFF;
+    padding: 8px 8px;
+}
+.phone-number{
+    width: 350px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    background: #FFF;
+    display: flex;
+}
+.sectorLocation,
+.subSectorLocation {
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 173px;
+    height: 55px;
+    background: #FFF;
+    padding: 8px 8px;
+}
+#dropdown-options{
+    padding: 8px 8px;
+    width: 173px;
+    height: 55px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+.pin-code, .geo-tag{
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 173px;
+    height: 55px;
+    background: #FFF;
+    padding: 8px 8px;
+}
+.geo-image{
+    display: flex;
+    justify-content: space-between;
+}
+.geotaggingimage{
+    width: 15px;
+    height: 15px;
+    background-color: #FFF;
+}
+
+.placehoder-tag{
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.placeholder-name{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: Bold;
+    font-weight: 500;
+    padding: 5px;
+    line-height: normal;
+}
+
+.placehoder-phone-tag {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.placeholder-phone-name {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: Bold;
+    font-weight: 500;
+    padding: 5px;
+    line-height: normal;
+    padding: 10px;
+    text-align: center;
+}
+.next-page-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nextpageButtonStyle{
+    margin-top: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 148px;
+    background-color: #0055A9;
+    border-radius: 8px;
+    border: 1px solid #c6c6c6;
+    cursor: pointer;
+}
+.do-it-later-link{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.doitlaterlink{
+    color: #0055A9;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration:none;
+    line-height: normal
+}

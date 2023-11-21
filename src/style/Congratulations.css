@@ -1,0 +1,68 @@
+.title-gif{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Congratulations_Gif img{
+    margin-top: 6rem;
+    width: 200px;
+    height: 200px;
+}
+
+.congratulations-title {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.completion-msg{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.creation-id{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.home-Button {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homebuttonstyle {
+    /* margin-top: 3rem; */
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 10px 148px;
+    background-color: #0055A9;
+    border-radius: 8px;
+    border: 1px solid #B2C0C9;
+    cursor: pointer;
+}
