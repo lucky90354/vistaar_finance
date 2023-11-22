@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import { FaThLarge, FaAccessibleIcon } from "react-icons/fa";
 import {
   MdOutlineReceipt,
@@ -6,13 +6,25 @@ import {
 } from "react-icons/md";
 import { IoMdWallet, IoMdPower } from "react-icons/io";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { GiTrophyCup } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 import "../style/navbar.css";
+import EnableLocationPopup from "./EnableLocationPopup";
+
 
 const ICON_SIZE = 15;
 
 function Navbar({visible, show}) {
+
+  const [isEnableLocationPopupVisible, setEnableLocationPopupVisible] =
+    useState(false);
+
+  const openEnableLocationPopup = () => {
+    setEnableLocationPopupVisible(true);
+  };
+
+  const closeEnableLocationPopup = () => {
+    setEnableLocationPopupVisible(false);
+  };
 
 	return (
     <>
@@ -43,34 +55,36 @@ function Navbar({visible, show}) {
               <span>Home</span>
             </NavLink>
 
-            <NavLink to="/AccountType" className="nav-link">
-              <MdOutlineReceipt size={ICON_SIZE} />
-              <span>Account Type </span>
-            </NavLink>
-
             <NavLink to="/AppAllocation" className="nav-link">
+              <MdOutlineReceipt size={ICON_SIZE} />
+              <span>Application</span>
+            </NavLink>
+
+            <NavLink to="#" className="nav-link">
               <IoMdWallet size={ICON_SIZE} />
-              <span>Application Allocation</span>
+              <span>Commission Earned</span>
             </NavLink>
 
-            <NavLink to="/OrderTracking" className="nav-link">
+            <NavLink
+              to="EnableLocation"
+              className="nav-link"
+              onClick={openEnableLocationPopup}
+            >
               <FaAccessibleIcon size={ICON_SIZE} />
-              <span>Order Tracking</span>
+              <span>Enable GPS</span>
             </NavLink>
+            {isEnableLocationPopupVisible && (
+              <EnableLocationPopup onClose={closeEnableLocationPopup} />
+            )}
 
-            <NavLink to="/IdDocument" className="nav-link">
+            <NavLink to="#" className="nav-link">
               <IoDocumentTextOutline size={ICON_SIZE} />
-              <span>Id Document</span>
+              <span>Profile</span>
             </NavLink>
-            <NavLink to="/PanVerification" className="nav-link">
+            <NavLink to="#" className="nav-link">
               <MdDomainVerification size={ICON_SIZE} />
-              <span>Pan Verification</span>
+              <span>Settings </span>
             </NavLink>
-            <NavLink to="/Congratulations" className="nav-link">
-              <GiTrophyCup size={ICON_SIZE} />
-              <span>Congratulations</span>
-            </NavLink>
-
           </div>
         </div>
         <div className="links">
@@ -82,5 +96,4 @@ function Navbar({visible, show}) {
     </>
   );
 }
-
 export default Navbar;

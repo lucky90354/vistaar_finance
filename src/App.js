@@ -8,7 +8,6 @@ import OrderTracking from "./components/Ordertracking";
 import IdDocument from "./components/IdDocument";
 import PanVerification from "./components/PanVerification";
 import Congratulations from "./components/Congratulations";
-
 import { BrowserRouter, Routes, Route,Navigate } from "react-router-dom";
 import "./style/Index.css";
 
@@ -37,6 +36,7 @@ function App() {
           <Route path="/PanVerification" element={<PanVerification />} />
 
           <Route path="/Congratulations" element={<Congratulations />} />
+
         </Routes>
       </div>
     </BrowserRouter>

@@ -3,23 +3,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -99;
 }
 .back-button{
     width: 9px;
     height: 10px;
+    margin-right: 3rem;
 }
 .back-link {
     cursor: pointer;
 }
 
-.back-link:hover {
-    text-decoration: underline;
-}
 #locationDropdown{
     margin-top: 2rem;
     border-radius: 5px;
-    margin-left: 13rem ;
+    margin-left: 12rem ;
     border: 1px solid #C4C4C4;
     background: #FFF;
     padding: 10px 15px;
@@ -33,9 +30,10 @@
     justify-content: center;
 }
 .map-style1{
-    z-index: -99999;
-    width: 414px;
-    overflow: visible;
+    width: 380px;
+    height: 180px;
+    padding: 5px 5px;
+    margin-right: 20px;
 }
 .app-allocation{
     font-family: ubuntu;
@@ -104,12 +102,13 @@
     justify-content: center;
 }
 .managers-deatils{
-    border-left: 2px solid #000;
-    border-left-style: dotted;
     width: 365px;
     height: 385px;
 }
-
+ .manager-id-name {
+    border-left: 2px solid #000;
+    border-left-style: dotted;
+}
 
 .manager{
     display: block;

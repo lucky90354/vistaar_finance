@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/Home.css";
 import {Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -15,11 +16,11 @@ function Home() {
               <div className="top-text">
                 <div className="left">
                   <p className="total-application">Total Application Count</p>
-                  <p className="total-application-no">114</p>
+                  <p className="total-application-no">04</p>
                 </div>
                 <div className="right">
                   <p className="approve-loan">Approved Loan App Count</p>
-                  <p className="approve-loan-no">23</p>
+                  <p className="approve-loan-no">03</p>
                 </div>
               </div>
               <div className="bottom-text">
@@ -27,7 +28,7 @@ function Home() {
                   <p className="total-disburse">Total Disbursed Amount</p>
                 </div>
                 <div className="right">
-                  <p className="total-disburse-amt">11,000,999 RS</p>
+                  <p className="total-disburse-amt">1,000,098 RS</p>
                 </div>
               </div>
             </Card.Body>
@@ -40,20 +41,25 @@ function Home() {
             <Card.Body>
               <div className="application-list">
                 <div className="left-icon">
-                  <img
-                    src={require("../assets/Images/Wallet.png")}
-                    alt="wallet"
-                  />
+                  <Link to="/AppAllocation">
+                    <img
+                      src={require("../assets/Images/Wallet.png")}
+                      alt="wallet"
+                    />
+                  </Link>
                   <p className="app-list">
                     Application
                     <span> List </span>
                   </p>
                 </div>
                 <div className="right-icon">
-                  <img
-                    src={require("../assets/Images/Document.png")}
-                    alt="wallet"
-                  />
+                  <Link to="/AppAllocation">
+                    <img
+                      src={require("../assets/Images/Document.png")}
+                      alt="wallet"
+                    />
+                  </Link>
+
                   <p className="app-status">
                     Application
                     <span> Status </span>

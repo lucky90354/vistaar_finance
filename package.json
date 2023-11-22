@@ -1,5 +1,5 @@
 {
-  "name": "react-sidebar",
+  "name": "vistaar_fina",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,10 +7,12 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.2",
     "bootstrap-3-card": "^0.2.0",
     "button": "^1.1.1",
     "card": "^2.5.4",
     "cards": "^2.0.3",
+    "eslint": "^8.54.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-datepicker": "^4.21.0",

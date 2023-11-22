@@ -1,12 +1,14 @@
-import React, { useState } from "react"; // Import useState
+import React, { useState, useEffect } from "react"; // Import useState
 import "../style/AppAllocation.css";
 import { Link } from "react-router-dom";
 import {Button, Card} from "react-bootstrap";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import axios from "axios";
 import locationIcon from "../assets/Images/LocationMarker.png";
 import ManagerImage from "../assets/Images/Ellipse112.png";
 import phoneIcon from "../assets/Images/Call.png";
 import location1Icon from "../assets/Images/Vector.png";
+import MapImage from "../assets/Images/map.jpeg";
 
 const mapStyles1 = [
   {
@@ -73,7 +75,7 @@ function RelationshipManager({ index, name, distance, appid }) {
               />
             </p>
             <p className="resume-app">
-              <Link className="resume-link" to="/Home">
+              <Link className="resume-link" to="/Panverification">
                 Resume Application
               </Link>
             </p>
@@ -102,16 +104,59 @@ function RelationshipManager({ index, name, distance, appid }) {
 function AppAllocation() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "YOUR_API_KEY",
+    googleMapsApiKey: "3d0717dbdbmshcb56a440d46825bp19b179jsneff730eebbec", // Replace with your API key
   });
 
   const [map, setMap] = React.useState(null);
+  const [directions, setDirections] = useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-    setMap(map);
-  }, []);
+  // Define the options object for Axios request
+  const options = {
+    method: "GET",
+    url: "https://driving-directions1.p.rapidapi.com/get-directions",
+    params: {
+      origin: "Church St & 29th St, San-Francisco, CA, USA",
+      destination: "Sunnyvale, CA, USA",
+      avoid_routes: "tolls,ferries",
+      country: "us",
+      language: "en",
+    },
+    headers: {
+      "X-RapidAPI-Key": "3d0717dbdbmshcb56a440d46825bp19b179jsneff730eebbec",
+      "X-RapidAPI-Host": "driving-directions1.p.rapidapi.com",
+    },
+  };
+
+  useEffect(() => {
+    // Fetch driving directions when the component mounts
+    const fetchDirections = async () => {
+      try {
+        const response = await axios.request(options); // Use the options from your original code
+        setDirections(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchDirections();
+  }, []); // Run this effect only once when the component mounts
+
+  const onLoad = React.useCallback(
+    function callback(map) {
+      if (directions) {
+        // Use the coordinates from the directions API response to set the map center
+        const center = {
+          lat: directions.origin.lat,
+          lng: directions.origin.lng,
+        };
+
+        const bounds = new window.google.maps.LatLngBounds(center);
+        map.fitBounds(bounds);
+        setMap(map);
+      }
+    },
+    [directions]
+  );
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null);
@@ -144,17 +189,21 @@ function AppAllocation() {
       </div>
       <div className="container">
         <div className="map-style1">
-          <GoogleMap
+          {/* <GoogleMap
             mapContainerStyle={containerStyle}
-            center={center}
+            center={directions ? directions.origin : center}
             zoom={10}
             onLoad={onLoad}
             onUnmount={onUnmount}
             styles={mapStyles1}
           >
-            {/* Child components, such as markers, info windows, etc. */}
             <></>
-          </GoogleMap>
+          </GoogleMap> */}
+          <img
+            src={MapImage}
+            alt="Map"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
         </div>
       </div>
       <div className="relationship-managers">
@@ -175,7 +224,7 @@ function AppAllocation() {
         </div>
         <div className="manager-relation-ship">
           <Card className="managers-deatils">
-            <Card.Body>
+            <Card.Body ClassName="card-body">
               {managersData.map((manager, index) => (
                 <RelationshipManager
                   className="manager-id-name"
@@ -186,13 +235,13 @@ function AppAllocation() {
                   appid={manager.appid}
                 />
               ))}
+              <div className="connect-allocation">
+                <Link to="/OrderTracking" className="hiperlink-style">
+                  <Button className="connect-app-alloc">Connect</Button>
+                </Link>
+              </div>
             </Card.Body>
           </Card>
-        </div>
-        <div className="connect-allocation">
-          <Link to="/OrderTracking" className="hiperlink-style">
-            <Button className="connect-app-alloc">Connect</Button>
-          </Link>
         </div>
       </div>
     </div>

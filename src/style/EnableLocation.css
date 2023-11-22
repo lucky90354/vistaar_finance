@@ -1,0 +1,17 @@
+.enablelocation {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: left;
+    z-index: +999;
+    color:#fff;
+}
+.popup-content{
+ margin-top: 1rem;
+ text-align: center;
+}
+.closebutton,.yesbutton{
+    padding: 5px 10px;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}

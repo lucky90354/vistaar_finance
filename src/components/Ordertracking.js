@@ -7,6 +7,8 @@ import ManagerImage from "../assets/Images/Rectangle327.png";
 import phoneIcon from "../assets/Images/call1.png";
 import LocationIcon from "../assets/Images/Group3329.png";
 import TimeIcon from "../assets/Images/Group33291.png";
+import MapImage from "../assets/Images/map.jpeg";
+
 
 const containerStyle = {
   width: "380px",
@@ -105,10 +107,10 @@ function OrderTracking() {
 
   return isLoaded ? (
     <div>
-      <div className="container">
+      <div className="container1">
         <div className="top-bar1">
-          <div className="back-button">
-            <Link className="back-link" to="/Home">
+          <div className="back-button1">
+            <Link className="back-link1" to="/Home">
               <img
                 src={require("../assets/Images/ChevronLeftOutline.png")}
                 alt="Back"
@@ -117,7 +119,7 @@ function OrderTracking() {
           </div>
         </div>
         <div className="map-style">
-          <GoogleMap
+          {/* <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
             zoom={10}
@@ -125,9 +127,13 @@ function OrderTracking() {
             onUnmount={onUnmount}
             styles={mapStyles}
           >
-            {/* Child components, such as markers, info windows, etc. */}
             <></>
-          </GoogleMap>
+          </GoogleMap> */}
+          <img
+            src={MapImage}
+            alt="Map"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
         </div>
       </div>
       <div className="relationship-managers">
